@@ -1,0 +1,15 @@
+import pygame
+import time
+
+# Initialize pygame mixer
+pygame.mixer.init()
+
+# Load the song (make sure to put the correct path to the file)
+pygame.mixer.music.load("path/to/ikaw_lang_by_nobita.mp3")
+
+# Play the song
+pygame.mixer.music.play()
+
+# Keep the program running while the music is playing
+while pygame.mixer.music.get_busy():
+    time.sleep(1)
